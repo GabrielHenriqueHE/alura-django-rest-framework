@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from apps.escola.models.course_model import Course
+from apps.escola.models.registration_model import Registration
 from apps.escola.models.student_model import Student
 
 
@@ -21,3 +22,12 @@ class Courses(admin.ModelAdmin):
 
 
 admin.site.register(Course, Courses)
+
+
+class Registrations(admin.ModelAdmin):
+    list_display = ["id", "student", "course", "period"]
+    list_display_links = ["id", "student"]
+    search_fields = ["student"]
+
+
+admin.site.register(Registration, Registrations)
