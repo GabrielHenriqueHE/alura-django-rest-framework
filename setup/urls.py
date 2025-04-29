@@ -3,4 +3,4 @@ from django.urls import include, path
 
 from apps.escola.router import router
 
-urlpatterns = [path("admin/", admin.site.urls), path("", include(router.urls))]
+urlpatterns = [path("admin/", admin.site.urls), path("", include("apps.escola.urls"))]
