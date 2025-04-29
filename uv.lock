@@ -11,6 +11,7 @@ dependencies = [
     { name = "django-environ" },
     { name = "djangorestframework" },
     { name = "markdown" },
+    { name = "validate-docbr" },
 ]
 
 [package.dev-dependencies]
@@ -25,6 +26,7 @@ requires-dist = [
     { name = "django-environ", specifier = ">=0.12.0" },
     { name = "djangorestframework", specifier = ">=3.16.0" },
     { name = "markdown", specifier = ">=3.8" },
+    { name = "validate-docbr", specifier = ">=1.10.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -188,4 +190,12 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/95/32/1a225d6164441be760d75c2c42e2780dc0873fe382da3e98a2e1e48361e5/tzdata-2025.2.tar.gz", hash = "sha256:b60a638fcc0daffadf82fe0f57e53d06bdec2f36c4df66280ae79bce6bd6f2b9", size = 196380 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5c/23/c7abc0ca0a1526a0774eca151daeb8de62ec457e77262b66b359c3c7679e/tzdata-2025.2-py2.py3-none-any.whl", hash = "sha256:1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8", size = 347839 },
+]
+
+[[package]]
+name = "validate-docbr"
+version = "1.10.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8b/0d/799d5c729efb85a8bd7786c7cb55780bb66f9c386ec805198e05d3fa0c80/validate_docbr-1.10.0-py3-none-any.whl", hash = "sha256:ff016f180b0c5ecff06abce1d83385924438c4d4c7f5c050e90fb724f1d968bb", size = 18814 },
 ]
