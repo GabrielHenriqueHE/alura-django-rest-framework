@@ -11,3 +11,8 @@ class StudentSerializer(serializers.ModelSerializer):
 
     def validate(self, data):
         return StudentValidator().validate(data)
+
+class StudentSerializerV2(serializers.ModelSerializer):
+    class Meta:
+        model = Student
+        fields = ['id', 'name', 'email', 'phone_number']
